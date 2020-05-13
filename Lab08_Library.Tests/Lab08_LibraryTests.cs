@@ -118,5 +118,23 @@ namespace Lab08_Library.Tests
             // Assert
             Assert.Equal(6, myList.Count);
         }
+        [Fact]
+        public void can_remove()
+        { 
+            // Arrange
+            Library <int> myList = new Library<int>();
+            myList.Add(1);
+            myList.Add(2);
+            myList.Add(3);
+            myList.Add(4);
+            myList.Add(5);
+            myList.Add(6);
+            // Act
+            myList.Remove(3);
+
+
+            // Assert
+            Assert.Equal("{1}->{2}->{4}->{5}->{6}->",myList.ToString());
+        }
     }
 }
