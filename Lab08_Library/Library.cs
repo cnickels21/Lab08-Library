@@ -34,7 +34,10 @@ namespace Lab08_Library
             books[count] = value;
             count++;
         }
+         public void Remove(T value)
+        {
 
+        }
 
 
     }

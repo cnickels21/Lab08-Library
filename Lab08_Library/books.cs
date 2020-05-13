@@ -8,6 +8,6 @@ namespace Lab08_Library
     {
         public string Title { get; }
         public string Author { get; }
-        public enum Genra { Fantacy, Science, History,Geography}
+        public enum Genre { Fantacy, Science, History,Geography}
     }
 }
